@@ -4,7 +4,7 @@
 //
 //  Created by Ringo Wathelet on 2026/05/06.
 //
-
+/*
 import SwiftUI
 import SwiftData
 
@@ -78,3 +78,4 @@ fileprivate struct NavigationViewWrapper<Content: View>: View {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }
+*/
