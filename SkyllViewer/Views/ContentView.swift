@@ -4,10 +4,13 @@
 //
 //  Created by Ringo Wathelet on 2026/05/06.
 //
-/*
+
 import SwiftUI
 import SwiftData
 
+ 
+ 
+ /*
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]

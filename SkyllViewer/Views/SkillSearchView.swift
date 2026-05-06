@@ -7,6 +7,7 @@
 import SwiftUI
 import SwiftData
 
+
 struct SkillSearchView: View {
     @Environment(SkillRepository.self) var repo: SkillRepository
     @Environment(\.modelContext) private var modelContext
@@ -20,7 +21,6 @@ struct SkillSearchView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
                 HStack {
                     TextField("Search skills...", text: $query)
                         .textFieldStyle(.roundedBorder)
@@ -29,7 +29,7 @@ struct SkillSearchView: View {
                         Task {
                             await repo.searchAndStore(query: query)
                         }
-                    }
+                    }.buttonStyle(.borderedProminent)
                 }
                 .padding()
                 
@@ -46,6 +46,7 @@ struct SkillSearchView: View {
                     NavigationLink(skill.title) {
                         SkillDetailView(skill: skill)
                     }
+                    .listRowBackground(Color.green.opacity(0.4))
                 }
             }
             .navigationTitle("Skyll Skills")
