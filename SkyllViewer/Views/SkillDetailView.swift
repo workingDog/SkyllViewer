@@ -28,8 +28,8 @@ struct SkillDetailView: View {
         .toolbar {
             ToolbarItemGroup(placement: .automatic) {
                 Picker("", selection: $isEditing) {
-                    Text("Edit").tag(true)
-                    Text("Preview").tag(false)
+                    Text("Raw").tag(true)
+                    Text("Markdown").tag(false)
                 }.pickerStyle(.segmented)
             }
         }

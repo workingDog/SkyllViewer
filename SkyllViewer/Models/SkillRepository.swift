@@ -30,7 +30,6 @@ final class SkillRepository {
         error = nil
         do {
             let results = try await service.searchSkills(query: query)
-    //        print("---> results: \(results.count)")
             for skill in results {
                 upsert(skill)
             }
@@ -56,11 +55,9 @@ final class SkillRepository {
             existing.relevanceScore = skill.relevanceScore
             existing.installCount = skill.installCount
             existing.fetchedAt = Date()
-  //          print("---> existing SkillEntity: \(existing.title)")
         } else {
             // Insert new entity
             let new = SkillEntity(from: skill)
-  //          print("---> new SkillEntity: \(new.title)")
             context.insert(new)
         }
     }

@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B442FAC3FED001FA705 /* SkyllerKit */; };
 		C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B592FAC44CF001FA705 /* SkyllerKit */; };
+		C7B373E42FAC4687003B6248 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E32FAC4687003B6248 /* README.md */; };
 		C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7DAE3922FAC26CA005F7E2A /* SkyllerKit */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyllViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B373E32FAC4687003B6248 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +45,7 @@
 		C76DC3BE2FAB13CB00EA194E = {
 			isa = PBXGroup;
 			children = (
+				C7B373E32FAC4687003B6248 /* README.md */,
 				C76DC3C92FAB13CB00EA194E /* SkyllViewer */,
 				C76DC3C82FAB13CB00EA194E /* Products */,
 			);
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B373E42FAC4687003B6248 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

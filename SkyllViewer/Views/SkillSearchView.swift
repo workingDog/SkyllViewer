@@ -15,7 +15,7 @@ struct SkillSearchView: View {
     @Query(sort: \SkillEntity.relevanceScore, order: .reverse)
     private var skills: [SkillEntity]
     
-    @State private var query = "swiftdata"
+    @State private var query = ""
     
     
     var body: some View {
