@@ -10,17 +10,17 @@
 		C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B442FAC3FED001FA705 /* SkyllerKit */; };
 		C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B592FAC44CF001FA705 /* SkyllerKit */; };
 		C7B373E42FAC4687003B6248 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E32FAC4687003B6248 /* README.md */; };
-		C7B373E62FAC48A6003B6248 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E52FAC48A6003B6248 /* picture1.png */; };
 		C7B373E82FAC48AC003B6248 /* picture2.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E72FAC48AC003B6248 /* picture2.png */; };
 		C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7DAE3922FAC26CA005F7E2A /* SkyllerKit */; };
+		C7ECC6352FACB20F0094B90B /* picture3.png in Resources */ = {isa = PBXBuildFile; fileRef = C7ECC6342FACB20F0094B90B /* picture3.png */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyllViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B373E32FAC4687003B6248 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C7B373E52FAC48A6003B6248 /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
 		C7B373E72FAC48AC003B6248 /* picture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture2.png; sourceTree = "<group>"; };
+		C7ECC6342FACB20F0094B90B /* picture3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -49,7 +49,7 @@
 		C76DC3BE2FAB13CB00EA194E = {
 			isa = PBXGroup;
 			children = (
-				C7B373E52FAC48A6003B6248 /* picture1.png */,
+				C7ECC6342FACB20F0094B90B /* picture3.png */,
 				C7B373E72FAC48AC003B6248 /* picture2.png */,
 				C7B373E32FAC4687003B6248 /* README.md */,
 				C76DC3C92FAB13CB00EA194E /* SkyllViewer */,
@@ -139,7 +139,7 @@
 			files = (
 				C7B373E42FAC4687003B6248 /* README.md in Resources */,
 				C7B373E82FAC48AC003B6248 /* picture2.png in Resources */,
-				C7B373E62FAC48A6003B6248 /* picture1.png in Resources */,
+				C7ECC6352FACB20F0094B90B /* picture3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

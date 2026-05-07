@@ -49,7 +49,8 @@ struct SkillSearchView: View {
                         NavigationLink(skill.title) {
                             SkillDetailView(skill: skill)
                         }
-                        .listRowBackground(Color.green.opacity(0.4))
+                        .padding(10)
+                        .listRowBackground(Color.green.opacity(0.2))
                     }
                     .onDelete(perform: deleteSkills)
                 }

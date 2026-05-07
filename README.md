@@ -7,7 +7,7 @@ A demo of the [SkyllerKit](https://github.com/workingDog/SkyllerKit) library in 
 It is a Swift API interface to the skill discovery platform for AI agents [Skyll](https://www.skyll.app/).
 
 <p float="left">
-    <img src="picture1.png" width="333" height="444" /> 
+    <img src="picture3.png" width="333" height="444" /> 
     <img src="picture2.png" width="333" height="444" />  
 </p>
 
