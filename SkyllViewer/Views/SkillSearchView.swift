@@ -24,11 +24,13 @@ struct SkillSearchView: View {
                 HStack {
                     TextField("Search skills...", text: $query)
                         .textFieldStyle(.roundedBorder)
+                        .submitLabel(.search)
+                        .onSubmit {
+                            startSearch()
+                        }
                     
                     Button("Search") {
-                        Task {
-                            await repo.searchAndStore(query: query)
-                        }
+                        startSearch()
                     }.buttonStyle(.borderedProminent)
                 }
                 .padding()
@@ -42,14 +44,52 @@ struct SkillSearchView: View {
                         .foregroundColor(.red)
                 }
                 
-                List(skills) { skill in
-                    NavigationLink(skill.title) {
-                        SkillDetailView(skill: skill)
+                List {
+                    ForEach(skills) { skill in
+                        NavigationLink(skill.title) {
+                            SkillDetailView(skill: skill)
+                        }
+                        .listRowBackground(Color.green.opacity(0.4))
                     }
-                    .listRowBackground(Color.green.opacity(0.4))
+                    .onDelete(perform: deleteSkills)
                 }
             }
             .navigationTitle("Skyll Skills")
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .automatic) {
+                Button("Delete All", role: .destructive) {
+                    deleteAllSkills()
+                }.buttonStyle(.glassProminent)
+            }
+        }
+    }
+    
+    private func startSearch() {
+        Task {
+            await repo.searchAndStore(query: query)
+        }
+    }
+    
+    private func deleteSkills(at offsets: IndexSet) {
+        for index in offsets {
+            modelContext.delete(skills[index])
+        }
+        do {
+            try modelContext.save()
+        } catch {
+            print("Failed to delete skills: \(error)")
+        }
+    }
+
+    private func deleteAllSkills() {
+        for skill in skills {
+            modelContext.delete(skill)
+        }
+        do {
+            try modelContext.save()
+        } catch {
+            print("Failed to clear all skills: \(error)")
         }
     }
 }
