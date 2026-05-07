@@ -1,5 +1,5 @@
 {
-  "originHash" : "3f2d94710aa22ad4c1077fea34c15237428a3d1be82a781d7e55e6a9312076aa",
+  "originHash" : "7191550dab0e03d835ede2aa41df896960f602dc2d1d924d59550b71b986e214",
   "pins" : [
     {
       "identity" : "skyllerkit",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/workingDog/SkyllerKit",
       "state" : {
         "branch" : "main",
-        "revision" : "2f6a90269056c328ddbdadb785dacadb9b3d5661"
+        "revision" : "0a2f1112618490404295d36667ad3cf0b49ddb92"
       }
     },
     {

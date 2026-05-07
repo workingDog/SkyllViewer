@@ -19,12 +19,23 @@ final class SkyllService {
     }
 
     func searchSkills(query: String, limit: Int = 10) async throws -> [SkyllSkill] {
-        try await client.searchSkills(
-            query: query,
-            limit: limit,
-            includeContent: true,
-            includeReferences: false
-        )
+        do {
+            return try await client.searchSkills(
+                query: query,
+                limit: limit,
+                includeContent: true,
+                includeReferences: false
+            )
+        } catch let error as SkyllError {
+            switch error {
+                case let .serverError(_, response): print("Skyll API error: \(response.message)")
+                default: print(error.localizedDescription)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        return []
     }
+ 
 }
 
