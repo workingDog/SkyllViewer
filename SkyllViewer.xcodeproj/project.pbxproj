@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B442FAC3FED001FA705 /* SkyllerKit */; };
-		C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B592FAC44CF001FA705 /* SkyllerKit */; };
+		C79177F12FAD50ED003C8ABB /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */; };
 		C7B373E42FAC4687003B6248 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E32FAC4687003B6248 /* README.md */; };
 		C7B373E82FAC48AC003B6248 /* picture2.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E72FAC48AC003B6248 /* picture2.png */; };
-		C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7DAE3922FAC26CA005F7E2A /* SkyllerKit */; };
 		C7ECC6352FACB20F0094B90B /* picture3.png in Resources */ = {isa = PBXBuildFile; fileRef = C7ECC6342FACB20F0094B90B /* picture3.png */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
@@ -36,9 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */,
-				C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */,
-				C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */,
+				C79177F12FAD50ED003C8ABB /* SwiftSkyllKit in Frameworks */,
 				C7F924502FAB254200FC116A /* Textual in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,9 +82,7 @@
 			name = SkyllViewer;
 			packageProductDependencies = (
 				C7F9244F2FAB254200FC116A /* Textual */,
-				C7DAE3922FAC26CA005F7E2A /* SkyllerKit */,
-				C77D3B442FAC3FED001FA705 /* SkyllerKit */,
-				C77D3B592FAC44CF001FA705 /* SkyllerKit */,
+				C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */,
 			);
 			productName = SkyllViewer;
 			productReference = C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */;
@@ -120,7 +114,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */,
-				C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */,
+				C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76DC3C82FAB13CB00EA194E /* Products */;
@@ -406,9 +400,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */ = {
+		C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/workingDog/SkyllerKit";
+			repositoryURL = "https://github.com/workingDog/SwiftSkyllKit";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -425,18 +419,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C77D3B442FAC3FED001FA705 /* SkyllerKit */ = {
+		C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = SkyllerKit;
-		};
-		C77D3B592FAC44CF001FA705 /* SkyllerKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */;
-			productName = SkyllerKit;
-		};
-		C7DAE3922FAC26CA005F7E2A /* SkyllerKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SkyllerKit;
+			package = C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */;
+			productName = SwiftSkyllKit;
 		};
 		C7F9244F2FAB254200FC116A /* Textual */ = {
 			isa = XCSwiftPackageProductDependency;

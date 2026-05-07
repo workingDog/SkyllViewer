@@ -5,7 +5,7 @@
 //  Created by Ringo Wathelet on 2026/05/06.
 //
 import Foundation
-import SkyllerKit
+import SwiftSkyllKit
 
 
 @MainActor
