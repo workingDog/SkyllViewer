@@ -6,7 +6,7 @@
 //
 import Foundation
 import SwiftData
-import Observation
+import SkyllerKit
 
 
 @Observable
@@ -16,7 +16,6 @@ final class SkillRepository {
     private let service = SkyllService.shared
     private let context: ModelContext
     
-    // Observable state
     var isLoading: Bool = false
     var error: Error?
     
@@ -52,7 +51,7 @@ final class SkillRepository {
             // Update existing entity
             existing.title = skill.title
             existing.skillDescription = skill.description
-            existing.content = skill.content
+            existing.content = skill.content ?? ""
             existing.source = skill.source
             existing.relevanceScore = skill.relevanceScore
             existing.installCount = skill.installCount

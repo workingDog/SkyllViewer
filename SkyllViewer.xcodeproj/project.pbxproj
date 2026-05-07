@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B442FAC3FED001FA705 /* SkyllerKit */; };
+		C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77D3B592FAC44CF001FA705 /* SkyllerKit */; };
+		C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7DAE3922FAC26CA005F7E2A /* SkyllerKit */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77D3B5A2FAC44CF001FA705 /* SkyllerKit in Frameworks */,
+				C77D3B452FAC3FED001FA705 /* SkyllerKit in Frameworks */,
+				C7DAE3932FAC26CA005F7E2A /* SkyllerKit in Frameworks */,
 				C7F924502FAB254200FC116A /* Textual in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +77,9 @@
 			name = SkyllViewer;
 			packageProductDependencies = (
 				C7F9244F2FAB254200FC116A /* Textual */,
+				C7DAE3922FAC26CA005F7E2A /* SkyllerKit */,
+				C77D3B442FAC3FED001FA705 /* SkyllerKit */,
+				C77D3B592FAC44CF001FA705 /* SkyllerKit */,
 			);
 			productName = SkyllViewer;
 			productReference = C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */;
@@ -102,6 +111,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */,
+				C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76DC3C82FAB13CB00EA194E /* Products */;
@@ -384,6 +394,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/workingDog/SkyllerKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/textual";
@@ -395,6 +413,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C77D3B442FAC3FED001FA705 /* SkyllerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SkyllerKit;
+		};
+		C77D3B592FAC44CF001FA705 /* SkyllerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C77D3B582FAC44CF001FA705 /* XCRemoteSwiftPackageReference "SkyllerKit" */;
+			productName = SkyllerKit;
+		};
+		C7DAE3922FAC26CA005F7E2A /* SkyllerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SkyllerKit;
+		};
 		C7F9244F2FAB254200FC116A /* Textual */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */;

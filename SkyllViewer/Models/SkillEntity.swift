@@ -6,6 +6,7 @@
 //
 import Foundation
 import SwiftData
+import SkyllerKit
 
 
 @Model
@@ -26,7 +27,7 @@ final class SkillEntity {
         self.id = api.id
         self.title = api.title
         self.skillDescription = api.description
-        self.content = api.content
+        self.content = api.content ?? ""
         self.source = api.source
         self.relevanceScore = api.relevanceScore
         self.installCount = api.installCount
