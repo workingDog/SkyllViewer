@@ -13,6 +13,6 @@ It is a Swift API interface to the skill discovery platform for AI agents [Skyll
 
 ## References
 
--   [Textual](https://github.com/gonzalezreal/textual) Render and customize rich attributed text in SwiftUI" used for markdown display.
+-   [Textual](https://github.com/gonzalezreal/textual) render and customize rich attributed text in SwiftUI, used for markdown display.
 
--   [Skyll](https://www.skyll.app/) skill discovery for AI agents.
+-   [Skyll](https://www.skyll.app/), skill discovery for AI agents.
