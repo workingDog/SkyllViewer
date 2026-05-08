@@ -11,12 +11,12 @@ import Foundation
 struct SkillDetailView: View {
     let skill: SkillEntity
     
-    @State private var isEditing: Bool = false
+    @State private var showRaw: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             ScrollView {
-                if isEditing {
+                if showRaw {
                     Text(skill.content)
                         .font(.system(.body, design: .monospaced))
                         .padding()
@@ -27,7 +27,7 @@ struct SkillDetailView: View {
         }
         .toolbar {
             ToolbarItemGroup(placement: .automatic) {
-                Picker("", selection: $isEditing) {
+                Picker("", selection: $showRaw) {
                     Text("Raw").tag(true)
                     Text("Markdown").tag(false)
                 }.pickerStyle(.segmented)

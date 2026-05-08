@@ -54,15 +54,15 @@ struct SkillSearchView: View {
                     }
                     .onDelete(perform: deleteSkills)
                 }
+                .toolbar {
+                    ToolbarItemGroup(placement: .automatic) {
+                        Button("Delete All", role: .destructive) {
+                            deleteAllSkills()
+                        }.buttonStyle(.glassProminent)
+                    }
+                }
             }
             .navigationTitle("Skyll Skills")
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .automatic) {
-                Button("Delete All", role: .destructive) {
-                    deleteAllSkills()
-                }.buttonStyle(.glassProminent)
-            }
         }
     }
     
