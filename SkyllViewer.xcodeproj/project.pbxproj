@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C79177F12FAD50ED003C8ABB /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */; };
 		C7B373E42FAC4687003B6248 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E32FAC4687003B6248 /* README.md */; };
 		C7B373E82FAC48AC003B6248 /* picture2.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E72FAC48AC003B6248 /* picture2.png */; };
+		C7BDBDCA2FB1734500944FC4 /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */; };
+		C7BDBDDF2FB176D100944FC4 /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */; };
 		C7ECC6352FACB20F0094B90B /* picture3.png in Resources */ = {isa = PBXBuildFile; fileRef = C7ECC6342FACB20F0094B90B /* picture3.png */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
@@ -34,8 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79177F12FAD50ED003C8ABB /* SwiftSkyllKit in Frameworks */,
+				C7BDBDDF2FB176D100944FC4 /* SwiftSkyllKit in Frameworks */,
 				C7F924502FAB254200FC116A /* Textual in Frameworks */,
+				C7BDBDCA2FB1734500944FC4 /* SwiftSkyllKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +84,8 @@
 			name = SkyllViewer;
 			packageProductDependencies = (
 				C7F9244F2FAB254200FC116A /* Textual */,
-				C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */,
+				C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */,
+				C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */,
 			);
 			productName = SkyllViewer;
 			productReference = C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */;
@@ -114,7 +117,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */,
-				C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */,
+				C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76DC3C82FAB13CB00EA194E /* Products */;
@@ -400,7 +403,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */ = {
+		C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/workingDog/SwiftSkyllKit";
 			requirement = {
@@ -419,9 +422,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C79177F02FAD50ED003C8ABB /* SwiftSkyllKit */ = {
+		C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C79177EF2FAD50ED003C8ABB /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */;
+			productName = SwiftSkyllKit;
+		};
+		C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */;
 			productName = SwiftSkyllKit;
 		};
 		C7F9244F2FAB254200FC116A /* Textual */ = {

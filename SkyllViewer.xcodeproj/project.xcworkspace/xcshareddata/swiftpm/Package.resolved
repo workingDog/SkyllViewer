@@ -1,5 +1,5 @@
 {
-  "originHash" : "69517bd0110f03794d013399cbf0c83067cb78cfa4ec832e0ed57a8d8600c509",
+  "originHash" : "3da5cc156f68a3f3efbf53da65cdfa04dc173f9b8c73004036bb8251f1fd5dd8",
   "pins" : [
     {
       "identity" : "swift-concurrency-extras",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/workingDog/SwiftSkyllKit",
       "state" : {
         "branch" : "main",
-        "revision" : "9241e4206188603d1ce5e6d006219cade813859b"
+        "revision" : "0bcf94931013aa3d5b12a8b29720601c44358941"
       }
     },
     {

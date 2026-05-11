@@ -11,17 +11,20 @@ import Foundation
 struct SkillDetailView: View {
     let skill: SkillEntity
     
+    let service = SkyllService.shared
+    
     @State private var showRaw: Bool = false
     
     var body: some View {
+        let mkString = skill.content.isEmpty ? "content is empty or not available" : skill.content
         VStack(alignment: .leading, spacing: 16) {
             ScrollView {
                 if showRaw {
-                    Text(skill.content)
+                    Text(mkString)
                         .font(.system(.body, design: .monospaced))
                         .padding()
                 } else {
-                    MKView(title: skill.title, text: skill.content)
+                    MKView(title: skill.title, text: mkString)
                 }
             }
         }
@@ -31,6 +34,19 @@ struct SkillDetailView: View {
                     Text("Raw").tag(true)
                     Text("Markdown").tag(false)
                 }.pickerStyle(.segmented)
+            }
+        }
+        .onAppear {
+            // if the skill.content.isEmpty, try fetching it from github
+            Task {
+                if self.skill.content.isEmpty {
+                    do {
+                        let markdown = try await SkyllService.shared.fetchSkillFromGithub(for: self.skill)
+                        self.skill.content = markdown
+                    } catch {
+                        print(error)
+                    }
+                }
             }
         }
     }
