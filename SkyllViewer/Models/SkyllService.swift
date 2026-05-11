@@ -38,21 +38,27 @@ final class SkyllService {
     }
     
     func fetchSkillFromRaw(for skill: SkillEntity) async throws -> String {
-        if let rawString = skill.raw,
-           let skillmd = try await client.fetchSkillFromRaw(for: rawString) {
-            return skillmd
-        } else {
-            return ""
+        if let rawString = skill.raw {
+            do {
+                let skillmd = try await client.fetchSkillFromRaw(for: rawString)
+                return skillmd
+            } catch {
+                print(error.localizedDescription)
+            }
         }
+        return ""
     }
- 
+    
     func fetchSkillFromGithub(for skill: SkillEntity) async throws -> String {
-        if let githubString = skill.github,
-           let skillmd = try await client.fetchSkillFromGithub(for: githubString) {
-            return skillmd
-        } else {
-            return ""
+        if let githubString = skill.github {
+            do {
+                let skillmd = try await client.fetchSkillFromGithub(for: githubString)
+                return skillmd
+            } catch {
+                print(error.localizedDescription)
+            }
         }
+        return ""
     }
 
 }

@@ -37,6 +37,12 @@ struct SkillDetailView: View {
             }
         }
         .onAppear {
+//            print("---> skill.content: \(skill.content)")
+//            print("---> skill.raw: \(skill.raw)")
+//            print("---> skill.github: \(skill.github)")
+//            print("---> skill.source: \(skill.source)")
+//            print()
+            
             // if the skill.content.isEmpty, try fetching it from github
             Task {
                 if self.skill.content.isEmpty {

@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		C7B373E42FAC4687003B6248 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E32FAC4687003B6248 /* README.md */; };
 		C7B373E82FAC48AC003B6248 /* picture2.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B373E72FAC48AC003B6248 /* picture2.png */; };
-		C7BDBDCA2FB1734500944FC4 /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */; };
-		C7BDBDDF2FB176D100944FC4 /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */; };
+		C7C907052FB1B8BA000BB3B1 /* SwiftSkyllKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7C907042FB1B8BA000BB3B1 /* SwiftSkyllKit */; };
 		C7ECC6352FACB20F0094B90B /* picture3.png in Resources */ = {isa = PBXBuildFile; fileRef = C7ECC6342FACB20F0094B90B /* picture3.png */; };
 		C7F924502FAB254200FC116A /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9244F2FAB254200FC116A /* Textual */; };
 /* End PBXBuildFile section */
@@ -35,9 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BDBDDF2FB176D100944FC4 /* SwiftSkyllKit in Frameworks */,
 				C7F924502FAB254200FC116A /* Textual in Frameworks */,
-				C7BDBDCA2FB1734500944FC4 /* SwiftSkyllKit in Frameworks */,
+				C7C907052FB1B8BA000BB3B1 /* SwiftSkyllKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +49,7 @@
 				C7B373E72FAC48AC003B6248 /* picture2.png */,
 				C7B373E32FAC4687003B6248 /* README.md */,
 				C76DC3C92FAB13CB00EA194E /* SkyllViewer */,
+				C7A281CB2FB1AC85003ECF8C /* Frameworks */,
 				C76DC3C82FAB13CB00EA194E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +60,13 @@
 				C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A281CB2FB1AC85003ECF8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,8 +90,7 @@
 			name = SkyllViewer;
 			packageProductDependencies = (
 				C7F9244F2FAB254200FC116A /* Textual */,
-				C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */,
-				C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */,
+				C7C907042FB1B8BA000BB3B1 /* SwiftSkyllKit */,
 			);
 			productName = SkyllViewer;
 			productReference = C76DC3C72FAB13CB00EA194E /* SkyllViewer.app */;
@@ -117,7 +122,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */,
-				C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */,
+				C7C907032FB1B8BA000BB3B1 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76DC3C82FAB13CB00EA194E /* Products */;
@@ -403,12 +408,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */ = {
+		C7C907032FB1B8BA000BB3B1 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/workingDog/SwiftSkyllKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 		C7F9244E2FAB254200FC116A /* XCRemoteSwiftPackageReference "textual" */ = {
@@ -422,13 +427,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7BDBDC92FB1734500944FC4 /* SwiftSkyllKit */ = {
+		C7C907042FB1B8BA000BB3B1 /* SwiftSkyllKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = SwiftSkyllKit;
-		};
-		C7BDBDDE2FB176D100944FC4 /* SwiftSkyllKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7BDBDDD2FB176D100944FC4 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */;
+			package = C7C907032FB1B8BA000BB3B1 /* XCRemoteSwiftPackageReference "SwiftSkyllKit" */;
 			productName = SwiftSkyllKit;
 		};
 		C7F9244F2FAB254200FC116A /* Textual */ = {
