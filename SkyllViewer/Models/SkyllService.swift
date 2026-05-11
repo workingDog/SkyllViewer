@@ -40,8 +40,7 @@ final class SkyllService {
     func fetchSkillFromRaw(for skill: SkillEntity) async throws -> String {
         if let rawString = skill.raw {
             do {
-                let skillmd = try await client.fetchSkillFromRaw(for: rawString)
-                return skillmd
+                return try await client.fetchSkillFromRaw(for: rawString)
             } catch {
                 print(error.localizedDescription)
             }
@@ -52,8 +51,7 @@ final class SkyllService {
     func fetchSkillFromGithub(for skill: SkillEntity) async throws -> String {
         if let githubString = skill.github {
             do {
-                let skillmd = try await client.fetchSkillFromGithub(for: githubString)
-                return skillmd
+                return try await client.fetchSkillFromGithub(for: githubString)
             } catch {
                 print(error.localizedDescription)
             }
